@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?from src.controller import HelloController?>
+<qtml controller="HelloController">
+    <head>
+        <style>
+            <!-- Plan in the next version -->
+        </style>
+
+        <script language="python">
+            <!-- Plan in the next version -->
+            a = 1
+            b = 2
+            print(a+b)
+        </script>
+    </head>
+
+    <def>
+        <!-- Plan in the next version -->
+        <singleton>
+            <export name="MyRect">
+                <QRect>
+                    <x>200</x>
+                    <y>200</y>
+                    <width>800</width>
+                    <height>1000</height>
+                </QRect>
+            </export>
+        </singleton>
+
+        <template>
+
+        </template>
+    </def>
+
+    <body>
+        <QWidget windowTitle="Manage">
+            <geometry>
+                <QRect>
+                    <x>300</x>
+                    <y>300</y>
+                    <width>1000</width>
+                    <height>800</height>
+                </QRect>
+            </geometry>
+
+            <QHBoxLayout>
+                <QML>
+                    <!-- Plan in the next version -->
+                    <Item>
+                        <Rectangle>
+
+                        </Rectangle>
+                    </Item>
+                </QML>
+
+                <QFrame>
+                    <fixedWidth>
+                        200
+                    </fixedWidth>
+                    <styleSheet>
+                        "background-color:red"
+                    </styleSheet>
+                </QFrame>
+
+                <QFrame>
+                    <styleSheet>
+                        "background-color:blue"
+                    </styleSheet>
+                    <QVBoxLayout>
+                        <QFrame>
+                            <styleSheet>
+                                "background-color:yellow"
+                            </styleSheet>
+                        </QFrame>
+                        <QFrame>
+                            <fixedHeight>
+                                160
+                            </fixedHeight>
+
+                            <styleSheet>
+                                "background-color:green"
+                            </styleSheet>
+                        </QFrame>
+                    </QVBoxLayout>
+                </QFrame>
+            </QHBoxLayout>
+        </QWidget>
+
+    </body>
+</qtml>
